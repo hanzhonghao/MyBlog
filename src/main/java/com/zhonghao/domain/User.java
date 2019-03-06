@@ -1,12 +1,20 @@
 package com.zhonghao.domain;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
 public class User {
 
+    @Id//主键
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//自增策略
     private Long id;
 
     private String name;
 
-    public User() {
+    protected User() {
     }
 
     public User(Long id, String name, String email) {
@@ -40,4 +48,8 @@ public class User {
     }
 
     private String email;
+
+    @Override public String toString() {
+        return "User{" + "id=" + id + ", name='" + name + '\'' + ", email='" + email + '\'' + '}';
+    }
 }

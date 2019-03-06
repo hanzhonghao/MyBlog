@@ -7,7 +7,7 @@
 </head>
 <body>
 <div th:replace="~{fragments/header :: header}"></div>
-<h3 th:text="${userModel.title}">waylau</h3>
+<h3 th:text="${userModel.title}">zhonghao</h3>
 <form action="/users" th:action="@{/users}" method="POST" th:object="${userModel.user}">
 	<input type="hidden" name="id" th:value="*{id}">
 	名称：<br>
