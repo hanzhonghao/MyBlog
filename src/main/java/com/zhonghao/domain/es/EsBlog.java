@@ -7,6 +7,9 @@ import java.io.Serializable;
 
 @Document(indexName ="blog",type = "blog")
 public class EsBlog implements Serializable {
+
+  private static final  long serialVersionUID=1L;
+
   @Id
   private String id;
   private String title;

@@ -1,7 +1,6 @@
 package com.zhonghao.repository.es;
 
 import com.zhonghao.domain.es.EsBlog;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository;
